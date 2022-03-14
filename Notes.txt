@@ -1,0 +1,13 @@
+1.The third task (7 stages CMOS oscillator) is in the inverter library.
+
+2.Each cell has the ADE L spectra state saved in it, in the ADE L ->session->load ->cellview->ok
+
+3.for the first task, the parameters of the mosft needed for the outputs to be plotted
+gm = pv("NM0" "gm" ?result "dcOpInfo-info")
+ro = 1/pv("NM0" "gds" ?result "dcOpInfo-info")
+vth = pv("NM0" "vth" ?result "dcOpInfo-info")
+vov = pv("NM0" "vgs" ?result "dcOpInfo-info") - pv("NM0" "vth" ?result "dcOpInfo-info")
+gm . ro = pv("NM0" "gm" ?result "dcOpInfo-info")/pv("NM0" "gds" ?result "dcOpInfo-info")
+
+4.To import libraries in cadence just follow that tremendously great awasome video XD:
+https://www.youtube.com/watch?v=S6JKQJwzYsM
